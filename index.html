@@ -28,14 +28,16 @@
     .hero-panel { background: rgba(11,11,18,0.45); border:1px solid rgba(255,0,60,0.2); border-radius:var(--radius); padding:18px 20px 14px; display:flex; flex-direction:column; gap:14px; }
     .qr-box { border:1px dashed rgba(255,255,255,0.08); border-radius:14px; padding:12px; display:flex; align-items:center; gap:14px; }
     .qr-img { width:90px; height:90px; background: repeating-linear-gradient(45deg, #0a0a0f 0 10px, #1f1f2b 10px 20px); border-radius:12px; display:grid; place-items:center; font-size:11px; text-align:center; color:#aaa; }
- .qrr-img {
+.qrr-img {
   border: 1px dashed rgba(255,255,255,0.08);
   border-radius: 8px;
-  padding: 4px;
-  width: 60%;        /* الصورة = 60% من الكونتينر فقط */
-  height: 60%;
+  padding: 3px;
+  box-sizing: border-box;
+  width: 40px;   /* صغّر الرقم إذا بدك أصغر (مثلاً 30) */
+  height: 40px;  /* نفس الشي هون */
   object-fit: contain;
 }
+
 
     .small { font-size:12px; color:var(--muted); }
 
@@ -203,6 +205,7 @@
   </script>
 </body>
 </html>
+
 
 
 
